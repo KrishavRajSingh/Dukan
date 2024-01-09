@@ -126,18 +126,18 @@ const TransactionTable = () => {
 
         <div className="relative overflow-x-auto">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-300 ">
+                <thead className="text-xs text-gray-700 bg-gray-50 dark:bg-gray-300 ">
                     <tr>
-                        <th scope="col" className="px-3 py-3">
+                        <th scope="col" className="px-3 font-semibold py-3">
                             Order ID
                         </th>
-                        <th scope="col" className="px-3 py-3">
+                        <th scope="col" className="px-3  font-semibold  py-3">
                             Order date
                         </th>
-                        <th scope="col" className="px-3 py-3">
+                        <th scope="col" className="px-3 py-3  font-semibold text-right">
                             Order amount
                         </th>
-                        <th scope="col" className="px-3 py-3 text-right">
+                        <th scope="col" className="px-3 py-3  font-semibold text-right">
                             Transaction fees
                         </th>
                     </tr>
@@ -145,17 +145,17 @@ const TransactionTable = () => {
                 <tbody>
                     {data.map((obj) => {
                         return <>
-                            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <tr className="bg-white border-b dark:border-gray-700">
+                                <th scope="row" className="px-3 py-3 text-sm text-left font-normal text-sky-700 ">
                                     {obj.id}
                                 </th>
-                                <td className="px-6 py-4">
+                                <td className="px-3 py-3 font-normal text-sm text-gray-800">
                                     {obj.date}
                                 </td>
-                                <td className="px-6 py-4">
+                                <td className="px-3 py-3 font-normal text-sm text-gray-950 text-right">
                                     {obj.amt}
                                 </td>
-                                <td className="px-6 py-4">
+                                <td className="px-3 py-3 font-normal text-sm text-gray-950 text-right">
                                     {obj.fee}
                                 </td>
                             </tr>
@@ -164,7 +164,7 @@ const TransactionTable = () => {
                 </tbody>
             </table>
         </div>
-
+        <div className='m-3 p-3'>Pagination</div>
     </div>
 };
 
