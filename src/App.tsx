@@ -8,10 +8,10 @@ function App() {
 
   return (
     <div className='grid grid-cols-12 h-screen'>
-      <div className='bg-[#1f2641] col-span-2 h-full text-white'>
+      <div className='bg-[#1E2640] col-span-2 h-full text-white'>
         <Sidebar />
       </div>
-      <div className='col-span-10 bg-slate-900'>
+      <div className='col-span-10 bg-[#FAFAFA]'>
         <NavBar />
         <div>
           <Overview/>

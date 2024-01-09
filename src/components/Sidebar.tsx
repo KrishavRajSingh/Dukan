@@ -16,7 +16,7 @@ import Credits from './Credits';
 
 const Sidebar = () => {
     return (
-    <div className='flex flex-col justify-between h-full'>
+    <div className='flex flex-col justify-between h-full p-2'>
         <div>
             <div className='flex items-center'>
             <img src={logo} alt="" className='h-10 rounded m-2'/>
@@ -24,7 +24,7 @@ const Sidebar = () => {
                 <div className='font-bold text-sm'>Nishyan</div>
                 <button onClick={() => alert('You cisited store')} className='text-xs underline text-gray-300'>Visit store</button>
             </div>
-            <img src={arrow} alt="" className='h-6'/>
+            <img src={arrow} alt="" className='h-4'/>
             </div>
             <ul>
                 <li>
